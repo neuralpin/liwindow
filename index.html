@@ -9,19 +9,26 @@
 </head>
 <body>
     <main>
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet</p>
-        <button id="showalert" type="button">Mostrar alert</button>
-        <button id="showaconfirm" type="button">Confirmar</button>
+        <h1>Custom Alert/Confirm Vanilla JS</h1>
+        <p>A continuación veremos dos ejemplos de uso de nuestras ventanas modales personalizadas.</p>
+        <p>
+            <button id="showalert" type="button">Mostrar Información</button>
+            <button id="showaconfirm" type="button">Confirmar</button>
+        </p>
+        <p><a href="http://neuralpin.com/frontend/modal-window">Ver tutorial</a> - <a href="https://codepen.io/fdulises/pen/qBRGzbZ">Editar en Codepen</a> - <a href="https://github.com/neuralpin/liwindow">Descargar desde Github</a></p>
     </main>
     <script src="src/liwindow.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+
             //Creamos nuestro alert personalizado y lo asignamos a un boton
-            const myalert = new lialert("Una alerta simple");
+            const myalert = new lialert("Este Script comprimido usa solo 5KB");
             document.querySelector("#showalert").addEventListener("click", myalert.show);
+
+
             //Creamos otro confirm personalizado que usaremos mas adelante
             const accionConfirmada = new lialert("El archivo se ha eliminado correctamente!");
+
             //Creamos nuestro confirm personalizado y lo asignamos a un boton
             const myconfirm = new liconfirm({
                 header: "Estas a punto de eliminar un archivo",
@@ -31,6 +38,7 @@
                 }
             });
             document.querySelector("#showaconfirm").addEventListener("click", myconfirm.show);
+
         });
     </script>
 </body>

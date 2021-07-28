@@ -1,3 +1,7 @@
+/*
+    Custom Alert/Confirm Vanilla JS - GPL-3.0
+    @neuralpin - http://neuralpin.com/frontend/modal-window
+*/
 /* -- liwindow -- */
 .liwindow-container *, .liwindow-container *::after, .liwindow-container *::before{
 	margin: 0;

@@ -1,3 +1,7 @@
+/*
+    Custom Alert/Confirm Vanilla JS - GPL-3.0
+    @neuralpin - http://neuralpin.com/frontend/modal-window
+*/
 /* -- Ventana para lightbox y modal dialogs -- */
 class liwindow {
     constructor(html) {
